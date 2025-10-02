@@ -1,4 +1,3 @@
-/**
 # Felhasználói fiók jelszó visszaállítása
 
 Ez a funkció lehetővé teszi a felhasználók számára, hogy elfelejtett vagy elveszített jelszavukat biztonságosan visszaállítsák.
