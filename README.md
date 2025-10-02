@@ -49,10 +49,10 @@ Generative AI esetén a modell egy adott bemeneti adat (prompt) alapján új, er
 
 Agentic AI olyan mesterséges intelligencia rendszerekre utal, amelyek képesek önállóan cselekedni és döntéseket hozni egy adott környezetben. Ezek az AI rendszerek nemcsak reagálnak a bemeneti adatokra, hanem képesek célokat kitűzni, tervezni és végrehajtani feladatokat anélkül, hogy folyamatos emberi beavatkozásra lenne szükségük.
 
-- ![Agentic AI](./images/agentic-ai.png)
+![Agentic AI](./images/agentic-ai.png)
 
 ### MCP
 
 Model Context Protocol (MCP) egy olyan szabvány vagy protokoll, amely lehetővé teszi a különböző AI modellek és rendszerek közötti interoperabilitást és együttműködést. Az MCP célja, hogy egységes keretet biztosítson az AI modellek közötti kommunikációhoz, adatcseréhez és integrációhoz, megkönnyítve ezzel a komplex AI alkalmazások fejlesztését és üzemeltetését. Legnagyobb előnye, hogy szabványosított interfészt biztosít, így a különböző gyártók és fejlesztők által készített modellek könnyebben integrálhatók és használhatók együtt.
 
-- ![MCP](./images/mcp-ai.png)
+![MCP](./images/mcp-ai.png)
