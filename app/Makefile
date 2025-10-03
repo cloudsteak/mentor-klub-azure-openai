@@ -52,7 +52,7 @@ python-version:
 	python --version
 
 # Parancssori alkalmazás indítása
-run-parancssor:
+run:
 	python parancssor.py
 
 reset-all:
