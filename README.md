@@ -188,7 +188,7 @@ A megoldsát itt találod: [Python alapú chat alkalmazás](./app/)
    - AZURE_OPENAI_ENDPOINT: Az Azure OpenAI szolgáltatásod végpontja (pl. https://<ai foundry erőforrás neve>.openai.azure.com/)
    - AZURE_OPENAI_API_KEY: Az Azure OpenAI szolgáltatásod API kulcsa
    - AZURE_OPENAI_DEPLOYMENT: Az Azure OpenAI szolgáltatásod üzemelő példányának neve (pl. gpt-4o)
-   - AZURE_OPENAI_API_VERSION: Az Azure OpenAI szolgáltatásod API verziója (pl. 2024-12-01-preview)
+   - AZURE_OPENAI_API_VERSION: Az Azure OpenAI szolgáltatásod API verziója (pl. 2025-03-01-preview)
 
 7. Futtasd az alkalmazást
 
