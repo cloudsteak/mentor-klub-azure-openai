@@ -153,7 +153,7 @@ A megoldsát itt találod: [Python alapú chat alkalmazás](./app/)
 
 1. Klónozd a repót
 2. Lépj be az `app` könyvtárba
-3. Hozz létre egy virtuális környezetet és aktiváld
+3. Hozz létre egy virtuális környezetet
 
    ```bash
    # Makefile
