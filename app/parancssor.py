@@ -50,7 +50,7 @@ def main():
                     )
                     reply = cc.choices[0].message.content
 
-            print(f"Bot: {reply}\n")
+            print(f"Mesterséges Intelligencia: {reply}\n")
             history.append({"role": "assistant", "content": reply})
 
         except KeyboardInterrupt:
