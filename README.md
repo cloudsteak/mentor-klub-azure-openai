@@ -74,6 +74,19 @@ Utána kipróbálhatod az alábbi kérdéseket feltenni a modellnek:
 - Hogyan kezeljem a problémás ügyfeleket?
 - Van üzemanyag kártya a céges autóhoz?
 
+### RAG (Retrieval-Augmented Generation) dokumentumokkal
+
+A RAG egy olyan technika, amely ötvözi a keresési és generatív modelleket, hogy pontosabb és relevánsabb válaszokat adjon a felhasználói kérdésekre. A RAG rendszer először egy keresési modellt használ, hogy megtalálja a legrelevánsabb dokumentumokat egy adott kérdés alapján, majd egy generatív modellt alkalmaz, hogy ezekből a dokumentumokból összefüggő és koherens választ generáljon.
+
+Most az előző chatbot példát továbbfejlesztjük úgy, hogy a válaszokat egy adott dokumentumkészletből nyerjük ki. Ehhez először létre kell hozni egy Azure tárfiókot és egy Azure AI keresőszolgáltatást, majd feltölteni a dokumentumokat, amelyeket a chatbot használni fog.
+
+Az alábbi lépéseket követve létrehozhatsz egy RAG alapú alkalmazást:
+
+- [Azure tárfiók létrehozása](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#2-azure-t%C3%A1rfi%C3%B3k-l%C3%A9trehoz%C3%A1sa)
+- [Azure AI keresőszolgáltatás létrehozása](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#3-azure-ai-keres%C5%91szolg%C3%A1ltat%C3%A1s-l%C3%A9trehoz%C3%A1sa)
+- [Saját adatforrás használata Chatbothoz Azure AI Foundry Studio-ban](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#4-saj%C3%A1t-adatforr%C3%A1s-haszn%C3%A1lata-chatbothoz-azure-openai-studio-ban)
+
+
 ### Webalkalmazás létrehozása chatbothoz
 
 Az előző példában bemutatott chatbotot egy webalkalmazásban lehet publikálni, hogy a felhasználók könnyen elérhessék. Az alkalmazás egy egyszerű felhasználói felületet biztosít, ahol a felhasználók beírhatják kérdéseiket, és a chatbot válaszol rájuk.
@@ -82,15 +95,6 @@ Ennek egy részletezését itt találod: [Webalkalmazás létrehozása Chatbotho
 
 A felhasználóknak a hozzáférést az alábbi módon lehet biztosítani: [Felhasználói azonosítás beállítása](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#6-felhaszn%C3%A1l%C3%B3i-azonos%C3%ADt%C3%A1s-be%C3%A1ll%C3%ADt%C3%A1sa)
 
-### RAG (Retrieval-Augmented Generation) dokumentumokkal
-
-A RAG egy olyan technika, amely ötvözi a keresési és generatív modelleket, hogy pontosabb és relevánsabb válaszokat adjon a felhasználói kérdésekre. A RAG rendszer először egy keresési modellt használ, hogy megtalálja a legrelevánsabb dokumentumokat egy adott kérdés alapján, majd egy generatív modellt alkalmaz, hogy ezekből a dokumentumokból összefüggő és koherens választ generáljon.
-
-Az alábbi lépéseket követve létrehozhatsz egy RAG alapú alkalmazást:
-
-- [Azure tárfiók létrehozása](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#2-azure-t%C3%A1rfi%C3%B3k-l%C3%A9trehoz%C3%A1sa)
-- [Azure AI keresőszolgáltatás létrehozása](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#3-azure-ai-keres%C5%91szolg%C3%A1ltat%C3%A1s-l%C3%A9trehoz%C3%A1sa)
-- [Saját adatforrás használata Chatbothoz Azure AI Foundry Studio-ban](https://github.com/cloudsteak/trn-azure-ai/blob/main/README.md#4-saj%C3%A1t-adatforr%C3%A1s-haszn%C3%A1lata-chatbothoz-azure-openai-studio-ban)
 
 ### Segéd (Agent) működésének bemutatása
 
@@ -129,14 +133,14 @@ Ebben a bemutatóban két részét is kipróbáljuk a generatív AI-nak: képgen
 A képgenerálás során egy szöveges leírás (prompt) alapján a modell új képet hoz létre, például:
 
 ```
-Egy modern iroda, ahol emberek éppen egy felhőről szóló képzést néznek a kivetítőn. Az oktató vidáman magyaráz. A résztvevők arra gondolnak, hogy ez milyen érdekes téma.
+Egy modern iroda, ahol emberek éppen egy felhőről szóló képzést néznek a kivetítőn. Az oktató vidáman magyaráz.
 ```
 
 A videógenerálás hasonló elven működik, de itt a modell egy rövid animációt vagy videóklipet készít a megadott leírás alapján.  
 Például:
 
 ```
-Egy robot sétál végig a tengerparton, miközben madarak repülnek az égen. A robot megáll egy pillanatra, a tenger felé néz, majd folytatja az útját.
+Egy robot sétál végig a tengerparton, miközben madarak repülnek az égen.
 ```
 
 ### Python alapú chat alkalmazás (API hívással)
