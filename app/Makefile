@@ -62,7 +62,7 @@ reset-all:
 	echo 'AZURE_OPENAI_ENDPOINT=https://<ai-studio-neve>.openai.azure.com/' > example.env
 	echo 'AZURE_OPENAI_API_KEY=<AZURE_OPENAI_KEY>' >> example.env
 	echo 'AZURE_OPENAI_DEPLOYMENT=<Üzemelő példány neve>   # pl. gpt-4o' >> example.env
-	echo 'AZURE_OPENAI_API_VERSION=2024-12-01-preview' >> example.env
+	echo 'AZURE_OPENAI_API_VERSION=2025-03-01-preview' >> example.env
 	@echo "Létrehozva: example.env fájl"
 	@echo "Kérlek, töltsd ki a example.env fájlt a megfelelő értékekkel."
 	@echo "Majd futtasd a make env parancsot a .env fájl létrehozásához."
